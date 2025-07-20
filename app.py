@@ -53,8 +53,6 @@ def send_message():
 	client = Client(account_sid, auth_token)
 	message = client.messages.create(
 		body="Forest Fire detected , Stay safe!!!",
-		from_="+17088347615",
-		to="+919360116782"
 	)
 	print(message.sid)
 	print("Fire Detected")
